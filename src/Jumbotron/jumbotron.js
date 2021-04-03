@@ -6,7 +6,7 @@ import snippets from '../Snippets/Snippets'
 
 class Jumbotron extends React.Component{
 	displayPage() {
-		let currentPage = snippets.find(page => page.name == this.props.currentPage);
+		let currentPage = snippets.find(page => page.name === this.props.currentPage);
 		return currentPage.content;
 	}
     render(){
