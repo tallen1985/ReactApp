@@ -1,0 +1,66 @@
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 75px;
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 25px;
+    width:100%; 
+}
+#logo-name {
+    display: inline;
+    font-size:17px;
+    font-weight:400;
+    opacity: .75;
+}
+#logo-name .fa-cat {
+    font-size: 40px;
+    width: 50px
+}
+#logo-name h1 {
+    color: white;
+    display: inline;
+}
+h4 {
+    font-size: 1.5rem;
+}
+nav {
+    margin-right:30px;
+    padding-top:10px;
+    display:inline-block;
+    width: 50%;
+    
+}
+nav .navbar {
+    width:100%;
+}
+nav ul {
+    display:inline-flex;
+    font-size: 20px;
+    font-weight:100;
+    text-align:center;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+button{
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none
+}
+
+button:hover {
+    font-weight: 400;
+    opacity: 1.0;
+    color: darkgray;
+}
+
+button:visited {
+    color: black;
+}

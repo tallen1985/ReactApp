@@ -1,0 +1,6 @@
+.jumboContent{
+    padding: 15px;
+    font-size: 16px;
+    height: 400px;
+    overflow-y: scroll;
+}
