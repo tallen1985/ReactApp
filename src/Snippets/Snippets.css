@@ -1,0 +1,62 @@
+.image {
+    background-color: white;
+    display: inline;
+    height: 50px;
+}
+.entry-box {
+    display:block;
+    margin-top:30px;
+}
+.spacer {
+    height: 20px;
+}
+.entry-box img {
+    float:left;
+}
+.entry-text {
+    overflow:hidden;
+    padding-left:10px;
+}
+entry-box a:link {
+    text-decoration: underline;
+}
+.entry-box a:hover {
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    font-weight: 400;
+    opacity: 1.0;
+    color: grey;
+}
+
+a:visited {
+    color: white;
+}
+
+main {
+    background-color:silver;
+}
+main #main-box, main #about-box{
+				
+    max-width: 1000px;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    padding-top:10px;
+}
+main #main-box {
+    overflow: hidden
+}
+main #about-box {
+    overflow-y: scroll;
+}
+#main-box #boxImage {
+    margin-top: -50px;
+    width: 100%;
+    overflow: hidden;
+}

@@ -4,3 +4,8 @@
     height: 400px;
     overflow-y: scroll;
 }
+.image {
+    background-color: white;
+    display: inline;
+    height: 50px;
+}

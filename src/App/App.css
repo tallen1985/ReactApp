@@ -1,5 +1,7 @@
-* {
+html {
   background-color: #282c34;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .App {
@@ -36,8 +38,7 @@
 
 .contentInside {
   margin: auto;
-  background-color: #282c34;
-  opacity: .75;
+  background-color: rgba(40,44,52,.75);
   width:90%;
   height: 90%;
   border: 1px solid black;
@@ -50,4 +51,32 @@ footer {
   color: white;
   position: relative;
   font-weight: 400;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 10px auto;
+  justify-content: space-evenly;
+}
+
+.footer {
+  margin: 10px 10px;
+  width: 30%;
+  min-width: 200px;
+  border: 1px solid white;
+}
+.links{
+  padding:0;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 150px;
+  background-color: white;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-logo{
+  height:55px;
+  background-color: white;
+  display: block;
 }
