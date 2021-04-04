@@ -30,7 +30,7 @@ let snippets = [
             <h3>Projects</h3>
         <div className="entry-box">
             <div className="entry-logo">
-                <img src={fertilityharbor} alt="Codecademy" width="150px" />
+                <img src={fertilityharbor} alt="Fertility Harbor" width="150px" />
             </div>
             <div className="entry-text">
                 <strong>Fertility Harbor</strong><br/>

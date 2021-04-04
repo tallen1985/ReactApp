@@ -42,8 +42,8 @@ class App extends React.Component {
         </div>
       </footer>
       <div className="links">
-        <a href="https://github.com/tallen1985"><img className="about-logo" src={github}/></a>
-			  <a  href="www.linkedin.com/in/troy-allen-595a40203"><img 	className="about-logo" src={linkedIn}/></a>
+        <a href="https://github.com/tallen1985"><img className="about-logo" alt="github" src={github}/></a>
+			  <a  href="www.linkedin.com/in/troy-allen-595a40203"><img 	className="about-logo" alt="linked in" src={linkedIn}/></a>
       </div>
     </div>
   )};
