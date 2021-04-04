@@ -35,7 +35,7 @@ let snippets = [
             <div className="entry-text">
                 <strong>Fertility Harbor</strong><br/>
                     <em>Local blog that I've done some maintenance work for. </em> <br/>
-                    <a href="https://www.fertilityharbor.com" target="_blank">Specifically rebuilding Shop section</a>
+                    <button onClick={() => window.open("https://www.fertilityharbor.com")}>Specifically rebuilding Shop section</button>
             </div>
         </div>
         <div className="spacer">
@@ -47,8 +47,8 @@ let snippets = [
             <div className="entry-text">
                 <strong>Codecademy Full-Stack Developer</strong><br/>
             <em>January 2021 - Current</em> <br/>
-                <a href ="https://gitfront.io/r/user-5563997/79efa750c133706fd3cadb36bac7c09fc677b8a0/Codecademy/" target="_blank">
-                Github Repository for Codecademy Projects</a>
+                <button onClick={() => window.open("https://gitfront.io/r/user-5563997/79efa750c133706fd3cadb36bac7c09fc677b8a0/Codecademy/")}>
+                Github Repository for Codecademy Projects</button>
             
             </div>
         </div>

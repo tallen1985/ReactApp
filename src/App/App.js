@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import Jumbotron from '../Jumbotron/jumbotron'
+// import Weather from '../Weather/Weather'
 import './App.css';
 import github from '../images/github.png';
 import linkedIn from '../images/LI-In-Bug.png'
@@ -23,7 +24,6 @@ class App extends React.Component {
     <div className="App">
       <div className="App-header">
           <NavBar pages={this.state.pages} onClick={this.changePage} currentPage={this.state.currentPage}/>
-        {/* <Jumbotron currentPage={this.state.currentPage} /> */}
         <div className="contentBox">
           <div className="contentInside">
             <Jumbotron currentPage={this.state.currentPage} />
@@ -35,7 +35,7 @@ class App extends React.Component {
         <div className="copyright footer"><p>Copyright Jake Allen 2021. <em>designed and coded without the use of WYSIWYG</em></p>
         </div>
         <div className="weather footer">
-          Insert Weather Here
+          {/* <Weather /> */}
         </div>
         <div className="signup footer">
           Insert Signup Here
