@@ -28,7 +28,6 @@ h4 {
     font-size: 1.5rem;
 }
 nav {
-    margin-right:30px;
     padding-top:10px;
     display:inline-block;
     width: 50%;
@@ -38,7 +37,10 @@ nav .navbar {
     width:100%;
 }
 nav ul {
+    padding: 0px;
+    margin: 0 auto;
     display:inline-flex;
+    flex-wrap: wrap;
     font-size: 20px;
     font-weight:100;
     text-align:center;
@@ -64,3 +66,21 @@ button:hover {
 button:visited {
     color: black;
 }
+/* Responsiveness */
+@media (max-width: 800px) {
+    .navBar {
+      height:fit-content;
+    }
+    .contentBox{
+      margin-top: 60px;
+    }
+  }
+  @media (max-width: 360px) {
+    header h1{
+      font-size: 1em;
+    }
+    .navBar {
+      height: fit-content;
+      display: block;
+    }
+  }
