@@ -31,7 +31,7 @@ class Weather extends React.Component {
                 <p>Current weather at Gato Headquarters</p>
                 <div class="weatherInfo">
                     <div className="weather-icon">
-                        <p ClassName="iconDesc" >{this.state.description}</p>
+                        <p className="iconDesc" >{this.state.description}</p>
                         <img style={{width:'70px'}} src= {this.state.icon} alt="weather icon"/>
                         
                     </div>

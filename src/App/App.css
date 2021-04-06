@@ -104,7 +104,8 @@ h3 {
     font-size: 1.5em;
   }
   .navBar {
-    height:fit-content;
+    height: fit-content;
+    display: block;
   }
   .contentBox{
     margin-top: 50px;
