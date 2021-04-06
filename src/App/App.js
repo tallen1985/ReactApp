@@ -54,24 +54,7 @@ class App extends React.Component {
         </div>
         <div className="signup footer">
 
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-        </form>
-        <form onSubmit={this.handleSubmit}>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
-
-
-        {/* <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <p>
             <h3>Keep up to date with Grey Gato Media</h3>
             <label>Your Email: <input type="email" name="email"  value={email}onChange={this.handleChange} /></label>
@@ -80,7 +63,7 @@ class App extends React.Component {
             <button type="submit">Send</button>
             
           </p>
-        </form> */}
+        </form>
 
 
 
