@@ -21,17 +21,19 @@ class NavBar extends React.Component{
     render(){
        return (
        <header>
-	    <div className="logo-name">
+        <div className="headerDiv">
+	        <div className="logo-name">
 		    <span className="fas fa-cat"></span>
 		    <h1>Grey Gato Media</h1>
-	    </div>
-	    <nav>
-			<div className="NavBar">
-				<ul>
-                {this.createButtons()}
-				</ul> 
-	         </div>
-         </nav>
+	        </div>
+	        <nav>
+			    <div className="NavBar">
+			    	<ul>
+                   {this.createButtons()}
+			    	</ul> 
+	             </div>
+            </nav>
+         </div>
 	    </header>
        ) 
     }

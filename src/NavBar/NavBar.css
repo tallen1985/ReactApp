@@ -68,6 +68,9 @@ button:visited {
     }
   }
   @media (max-width: 360px) {
+    .headerDiv {
+        display:block;
+    }
     header h1{
       font-size: 1em;
     }

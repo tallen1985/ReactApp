@@ -29,7 +29,7 @@ class Weather extends React.Component {
         return (
             <div className="weatherBox">
                 <p>Current weather at Gato Headquarters</p>
-                <div class="weatherInfo">
+                <div className="weatherInfo">
                     <div className="weather-icon">
                         <p className="iconDesc" >{this.state.description}</p>
                         <img style={{width:'70px'}} src= {this.state.icon} alt="weather icon"/>
