@@ -15,10 +15,10 @@ class Weather extends React.Component {
     async componentDidMount() {
         let apiKey = '9eb115b75f669676b72125c5e2e7859a';
 
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${this.state.zipCode}&appid=${apiKey}&units=imperial`)
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${this.state.zipCode}&appid=${apiKey}&units=imperial`)
         let jsonResponse = await response.json();
         const iconName = jsonResponse.weather[0].icon // this will hold the icon
-        const iconApi = await fetch('http://openweathermap.org/img/w/' + iconName + '.png')
+        const iconApi = await fetch('https://openweathermap.org/img/w/' + iconName + '.png')
         
         this.setState({ description: jsonResponse.weather[0].main,
                  temp: Math.floor(jsonResponse.main.temp),
