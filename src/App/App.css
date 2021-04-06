@@ -12,7 +12,6 @@ html {
   height: 40vmin;
   pointer-events: none;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -21,6 +20,9 @@ html {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.navBar {
+  width: 90%;
 }
 .main{
   width: 100%;
@@ -81,4 +83,14 @@ footer {
 }
 h3 {
   font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 800px) {
+  .navBar {
+    height:fit-content;
+  }
+  .contentBox{
+    margin-top: 50px;
+  }
 }

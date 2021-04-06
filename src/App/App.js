@@ -42,7 +42,9 @@ class App extends React.Component {
   return (
     <div className="App">
       <div className="App-header">
+        <div className="navBar">
           <NavBar pages={this.state.pages} onClick={this.changePage} currentPage={this.state.currentPage}/>
+          </div>
         <div className="contentBox">
           <div className="contentInside">
             <Jumbotron currentPage={this.state.currentPage} />
