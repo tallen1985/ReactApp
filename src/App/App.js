@@ -3,6 +3,11 @@ import NavBar from '../NavBar/NavBar';
 import Jumbotron from '../Jumbotron/jumbotron'
 import './App.css';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 class App extends React.Component {
   constructor(props){
     super(props);
