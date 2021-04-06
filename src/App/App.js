@@ -9,14 +9,30 @@ class App extends React.Component {
     this.changePage = this.changePage.bind(this)
     this.state = {
       pages: ['main', 'about', 'contact', 'projects'],
-      currentPage: 'main'
+      currentPage: 'main',
+      email: ""
     };
   }
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   changePage(currentPage){ 
     this.setState({currentPage: currentPage});
   }
   render(){
+    const { email } = this.state;
   return (
     <div className="App">
       <div className="App-header">
@@ -32,14 +48,14 @@ class App extends React.Component {
         <div className="copyright footer"><p>Copyright Jake Allen 2021. <em>designed and coded without the use of WYSIWYG</em></p>
         </div>
         <div className="signup footer">
-                <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="contact" value="contact" />.
+                <form onSubmit={this.handleSubmit}>
           <p>
             <h3>Keep up to date with Grey Gato Media</h3>
-            <label>Your Email: <input type="email" name="email" /></label>
+            <label>Your Email: <input type="email" name="email"  value={email}onChange={this.handleChange} /></label>
           </p>
           <p>
             <button type="submit">Send</button>
+            <input type="hidden" name="form-name" value="contact" />
           </p>
         </form>
         </div>
