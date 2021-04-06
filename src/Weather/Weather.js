@@ -32,7 +32,7 @@ class Weather extends React.Component {
                 <div class="weatherInfo">
                     <div className="weather-icon">
                         <p ClassName="iconDesc" >{this.state.description}</p>
-                        <img style={{width:'70px'}} src= {this.state.icon} />
+                        <img style={{width:'70px'}} src= {this.state.icon} alt="weather icon"/>
                         
                     </div>
                     <div className="weather-temp">
