@@ -33,6 +33,7 @@ class App extends React.Component {
         </div>
         <div className="signup footer">
                 <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="contact" value="contact" />.
           <p>
             <h3>Keep up to date with Grey Gato Media</h3>
             <label>Your Email: <input type="email" name="email" /></label>
