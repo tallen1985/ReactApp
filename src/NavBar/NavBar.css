@@ -67,7 +67,7 @@ button:visited {
       height:150px;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     .headerDiv {
         display:block;
     }
