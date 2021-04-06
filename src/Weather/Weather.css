@@ -1,6 +1,9 @@
 .weatherBox{
     margin: auto;
-    width: 400px;
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .weatherBox p:first-child{
     margin-bottom: 0px;
