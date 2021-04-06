@@ -10,6 +10,7 @@ let snippets = [
     {
         "name": "main",
         "content": <fragment>
+            <h2>Welcome to Grey Gato Media</h2>
             <Weather />
         </fragment>
     },

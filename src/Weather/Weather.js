@@ -7,27 +7,38 @@ class Weather extends React.Component {
         this.state= {
             description: '',
             temp: '',
-            icon: ''
+            icon: '',
+            zipCode: '03857'
         }
     }
     
-    componentDidMount() {
+    async componentDidMount() {
         let apiKey = '9eb115b75f669676b72125c5e2e7859a';
-        let zipCode = '03857';
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${apiKey}&units=imperial`)
-        .then((response) => response.json())
-        .then(jsonResponse => {
-            this.setState({ description: jsonResponse.weather[0].main,
-                 temp: Math.floor(jsonResponse.main.temp) });
-        });
+        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${this.state.zipCode}&appid=${apiKey}&units=imperial`)
+        let jsonResponse = await response.json();
+        const iconName = jsonResponse.weather[0].icon // this will hold the icon
+        const iconApi = await fetch('http://openweathermap.org/img/w/' + iconName + '.png')
+        
+        this.setState({ description: jsonResponse.weather[0].main,
+                 temp: Math.floor(jsonResponse.main.temp),
+                icon: iconApi.url });
     }
 
     render(){
         return (
             <div className="weatherBox">
-                <p>Current weather at Gato Headquarters</p><hr />
-                <p>Description: {this.state.description} <br/>Temp: {this.state.temp} &deg;.</p>
+                <p>Current weather at Gato Headquarters</p>
+                <div class="weatherInfo">
+                    <div className="weather-icon">
+                        <p ClassName="iconDesc" >{this.state.description}</p>
+                        <img style={{width:'70px'}} src= {this.state.icon} />
+                        
+                    </div>
+                    <div className="weather-temp">
+                        <p>Temp:</p><p className="temp">{this.state.temp}&deg;</p>
+                    </div>
+                </div>
             </div>
         )
     }

@@ -32,7 +32,15 @@ class App extends React.Component {
         <div className="copyright footer"><p>Copyright Jake Allen 2021. <em>designed and coded without the use of WYSIWYG</em></p>
         </div>
         <div className="signup footer">
-          Insert Signup Here
+                <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <h3>Keep up to date with Grey Gato Media</h3>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
         </div>
       </footer>
     </div>
