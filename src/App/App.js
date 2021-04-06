@@ -16,7 +16,7 @@ class App extends React.Component {
       pages: ['main', 'about', 'contact', 'projects'],
       currentPage: 'main',
       email: "",
-      yourName: ""
+      name: ""
     };
   }
 
@@ -38,7 +38,7 @@ class App extends React.Component {
     this.setState({currentPage: currentPage});
   }
   render(){
-    const { email, yourName } = this.state;
+    const { email, name } = this.state;
   return (
     <div className="App">
       <div className="App-header">
@@ -58,10 +58,9 @@ class App extends React.Component {
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <p>
             <h3>Keep up to date with Grey Gato Media</h3>
-            <label>Your Name: <input type="name" name="yourName"  value={yourName} onChange={this.handleChange} /></label>
+            <label>Your Name: <input type="name" name="name" value={name} onChange={this.handleChange} /></label>
             </p>
             <p>
-
             <label>Your Email: <input type="email" name="email"  value={email}onChange={this.handleChange} /></label>
           </p>
           <p><input type="hidden" name="form-name" value="contact" />  
