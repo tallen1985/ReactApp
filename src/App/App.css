@@ -60,13 +60,12 @@ footer {
 
 .footer {
   margin: 10px 10px;
-  width: 30%;
+  width: 40%;
   min-width: 200px;
-  border: 1px solid white;
 }
 .links{
   padding:0;
-  margin: auto;
+  margin: 10px auto;
   border: 5px solid white;
   border-radius: 5px;
   width: 150px;

@@ -14,7 +14,7 @@ class NavBar extends React.Component{
     createButtons(){
         const pages = this.props.pages.filter(page => page !== this.props.currentPage);
         let buttons = pages.map(page => {
-            return <li><button key={page} id={page} onClick={this.handleClick}>{page}</button></li>
+            return <li key={page}><button key={page} id={page} onClick={this.handleClick}>{page}</button></li>
         })
         return buttons;
     }

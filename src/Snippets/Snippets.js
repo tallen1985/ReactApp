@@ -2,11 +2,16 @@
 import './Snippets.css';
 import fertilityharbor from "../images/Fertility-Harbor-Logo-Web.jpg";
 import codecademylogo from "../images/codecademy-logo.jpg";
+import github from '../images/github.png';
+import linkedIn from '../images/LI-In-Bug.png'
+import Weather from '../Weather/Weather'
 
 let snippets = [
     {
         "name": "main",
-        "content": "Main Page Content"
+        "content": <fragment>
+            <Weather />
+        </fragment>
     },
     {
         "name": "about",
@@ -22,7 +27,13 @@ let snippets = [
         "content": <fragment><h4>Grey Gato Media</h4>
         <p>
         Newmarket NH, 03857</p>
-        <a href="mailto:jake.allen@me.com">Jake.allen@me.com</a></fragment>
+        <a href="mailto:jake.allen@me.com">Jake.allen@me.com</a>
+        <br></br>
+        <div className="links">
+        <img onClick={() => window.open("https://github.com/tallen1985")}className="about-logo" alt="github" src={github}/>
+			  <img onClick={() => window.open("http://www.linkedin.com/in/troy-allen-595a40203")} className="about-logo" alt="linked in" src={linkedIn}/>
+      </div>
+      </fragment>
     },
     {
         "name": "projects",

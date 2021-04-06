@@ -1,10 +1,7 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import Jumbotron from '../Jumbotron/jumbotron'
-// import Weather from '../Weather/Weather'
 import './App.css';
-import github from '../images/github.png';
-import linkedIn from '../images/LI-In-Bug.png'
 
 class App extends React.Component {
   constructor(props){
@@ -34,17 +31,10 @@ class App extends React.Component {
       <footer>
         <div className="copyright footer"><p>Copyright Jake Allen 2021. <em>designed and coded without the use of WYSIWYG</em></p>
         </div>
-        <div className="weather footer">
-          {/* <Weather /> */}
-        </div>
         <div className="signup footer">
           Insert Signup Here
         </div>
       </footer>
-      <div className="links">
-        <a href="https://github.com/tallen1985"><img className="about-logo" alt="github" src={github}/></a>
-			  <a  href="www.linkedin.com/in/troy-allen-595a40203"><img 	className="about-logo" alt="linked in" src={linkedIn}/></a>
-      </div>
     </div>
   )};
 }
