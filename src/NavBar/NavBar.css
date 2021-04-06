@@ -10,16 +10,16 @@ header {
     padding-left: 25px;
     width:100%; 
 }
-#logo-name {
+.logo-name {
     display: inline;
     font-weight:400;
     opacity: .75;
 }
-#logo-name .fa-cat {
+.logo-name .fa-cat {
     font-size: 40px;
     width: 50px
 }
-#logo-name h1 {
+.logo-name h1 {
     color: white;
     display: inline;
 }
@@ -62,12 +62,9 @@ button:visited {
     color: black;
 }
 /* Responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .navBar {
-      height:fit-content;
-    }
-    .contentBox{
-      margin-top: 60px;
+      height:150px;
     }
   }
   @media (max-width: 360px) {

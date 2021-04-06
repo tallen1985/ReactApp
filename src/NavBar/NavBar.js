@@ -21,7 +21,7 @@ class NavBar extends React.Component{
     render(){
        return (
        <header>
-	    <div id="logo-name">
+	    <div className="logo-name">
 		    <span className="fas fa-cat"></span>
 		    <h1>Grey Gato Media</h1>
 	    </div>
