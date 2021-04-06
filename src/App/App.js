@@ -53,14 +53,14 @@ class App extends React.Component {
         <div className="copyright footer"><p>Copyright Jake Allen 2021. <em>designed and coded without the use of WYSIWYG</em></p>
         </div>
         <div className="signup footer">
-                <form onSubmit={this.handleSubmit}>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <p>
             <h3>Keep up to date with Grey Gato Media</h3>
             <label>Your Email: <input type="email" name="email"  value={email}onChange={this.handleChange} /></label>
           </p>
-          <p>
+          <p><input type="hidden" name="form-name" value="contact" />  
             <button type="submit">Send</button>
-            <input type="hidden" name="form-name" value="contact" />
+            
           </p>
         </form>
         </div>
