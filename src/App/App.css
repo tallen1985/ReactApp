@@ -91,6 +91,14 @@ h3 {
 }
 
 /* Responsiveness */
+@media (min-width: 1280px) {
+  .contentBox{
+    width: 1020px;
+  }
+  .contentInside{
+    width: 920px;
+  }
+}
 @media (max-width: 800px) {
   .navBar {
     height:fit-content;

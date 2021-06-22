@@ -1,6 +1,5 @@
 
 import './Snippets.css';
-import fertilityharbor from "../images/Fertility-Harbor-Logo-Web.jpg";
 import codecademylogo from "../images/codecademy-logo.jpg";
 import github from '../images/github.png';
 import linkedIn from '../images/LI-In-Bug.png'
@@ -42,12 +41,11 @@ let snippets = [
             <h3>Projects</h3>
         <div className="entry-box">
             <div className="entry-logo">
-                <img src={fertilityharbor} alt="Fertility Harbor" width="150px" />
             </div>
             <div className="entry-text">
-                <strong>Fertility Harbor</strong><br/>
-                    <em>Local blog that I've done some maintenance work for. </em> <br/>
-                    <button onClick={() => window.open("https://www.fertilityharbor.com")}>Specifically rebuilding Shop section</button>
+                <strong>To-Do App</strong><br/>
+                    <em>Simple To-Do list app utilizing Node.js, Express, Read/Write JSON. </em> <br/>
+                    <button onClick={() => window.open("https://greygato-todo.herokuapp.com")}>Link to App</button>
             </div>
         </div>
         <div className="spacer">
