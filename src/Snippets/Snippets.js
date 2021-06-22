@@ -43,9 +43,20 @@ let snippets = [
             <div className="entry-logo">
             </div>
             <div className="entry-text">
+                <strong>Purple Flamingo Pottery</strong><br/>
+                    <em>Local family-owned pottery studio </em> <br/>
+                    <button onClick={() => window.open("https://greygato-todo.herokuapp.com")}>Link to App</button>
+            </div>
+        </div>
+        <div className="spacer">
+        </div>
+        <div className="entry-box">
+            <div className="entry-logo">
+            </div>
+            <div className="entry-text">
                 <strong>To-Do App</strong><br/>
                     <em>Simple To-Do list app utilizing Node.js, Express, Read/Write JSON. </em> <br/>
-                    <button onClick={() => window.open("https://greygato-todo.herokuapp.com")}>Link to App</button>
+                    <button onClick={() => window.open("https://tallen1985.github.io/Projects/PurpleFlamingo/index.html")}>Link to Website - Under Construction</button>
             </div>
         </div>
         <div className="spacer">
