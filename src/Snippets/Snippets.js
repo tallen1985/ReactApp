@@ -1,6 +1,8 @@
 
 import './Snippets.css';
+import handyListLogo from '../images/handy-list.png'
 import codecademylogo from "../images/codecademy-logo.jpg";
+import flamingoLogo from '../images/flamingo.png';
 import github from '../images/github.png';
 import linkedIn from '../images/LI-In-Bug.png'
 import Weather from '../Weather/Weather'
@@ -39,19 +41,10 @@ let snippets = [
         "name": "projects",
         "content": <fragment><div id="main-box">
             <h3>Projects</h3>
+        
         <div className="entry-box">
-            <div className="entry-logo">
-            </div>
-            <div className="entry-text">
-                <strong>Purple Flamingo Pottery</strong><br/>
-                    <em>Local family-owned pottery studio </em> <br/>
-                    <button onClick={() => window.open("https://tallen1985.github.io/Projects/PurpleFlamingo/index.html")}>Link to Site - Under Construction</button>
-            </div>
-        </div>
-        <div className="spacer">
-        </div>
-        <div className="entry-box">
-            <div className="entry-logo">
+            <div className="entry-logo handyListLogo">
+                <img className="" src={handyListLogo} alt="HandyList" height="90px" />
             </div>
             <div className="entry-text">
                 <strong>To-Do App</strong><br/>
@@ -63,13 +56,25 @@ let snippets = [
         </div>
         <div className="entry-box">
             <div className="entry-logo">
+                <img className="flamingoLogo" src={flamingoLogo} alt="Purple Flamingo" width="150px" />
+            </div>
+            <div className="entry-text">
+                <strong>Purple Flamingo Pottery</strong><br/>
+                    <em>Local family-owned pottery studio </em> <br/>
+                    <button onClick={() => window.open("https://tallen1985.github.io/Projects/PurpleFlamingo/index.html")}>Link to Site - Under Construction</button>
+            </div>
+        </div>
+        <div className="spacer">
+        </div>
+        <div className="entry-box">
+            <div className="entry-logo">
                 <img src={codecademylogo} alt="Codecademy" width="150px" />
             </div>
             <div className="entry-text">
                 <strong>Codecademy Full-Stack Developer</strong><br/>
             <em>January 2021 - Current</em> <br/>
-                <button onClick={() => window.open("https://gitfront.io/r/user-5563997/79efa750c133706fd3cadb36bac7c09fc677b8a0/Codecademy/")}>
-                Github Repository for Codecademy Projects</button>
+                <button onClick={() => window.open("https://github.com/tallen1985")}>
+                Github Repository for Various Projects</button>
             
             </div>
         </div>

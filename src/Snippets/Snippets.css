@@ -17,7 +17,7 @@
     overflow:hidden;
     padding-left:10px;
 }
-entry-box a:link {
+.entry-box a:link {
     text-decoration: underline;
 }
 .entry-box a:hover {
@@ -54,4 +54,11 @@ main #about-box {
     margin-top: -50px;
     width: 100%;
     overflow: hidden;
+}
+.flamingoLogo {
+    position: relative;
+    top:-20px;
+}
+.handyListLogo {
+    padding-left: 30px;
 }
