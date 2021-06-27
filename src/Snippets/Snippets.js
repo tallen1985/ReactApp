@@ -50,6 +50,9 @@ let snippets = [
                 <strong>To-Do App</strong><br/>
                     <em>Simple To-Do list app utilizing Node.js, Express, Read/Write JSON. </em> <br/>
                     <button onClick={() => window.open("https://greygato-todo.herokuapp.com")}>Link to App</button>
+                    <br/>
+                    <em>Version 1.1, this time created using python, Flask, and SQLAlchemy.  I recreated it it on Pythonanywhere due to Heroku not having persistent Storage.</em><br/>
+                    <button onClick={() => window.open('https//tallen1985.pythonanywhere.com')}>Link to App</button>
             </div>
         </div>
         <div className="spacer">
