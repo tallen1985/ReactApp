@@ -51,7 +51,7 @@ let snippets = [
                     <button onClick={() => window.open("https://tallen1985.github.io/Projects/weather/")}>Link to App</button>
             </div>
         </div>
-        <div className="spacer">
+        <div className="spacer"></div>
         <div className="entry-box">
             <div className="entry-logo handyListLogo">
                 <img className="" src={handyListLogo} alt="HandyList" height="90px" />
@@ -91,7 +91,8 @@ let snippets = [
             
             </div>
         </div>
-        </div></fragment>
+        </div>
+        </fragment>
     }];
     
 
