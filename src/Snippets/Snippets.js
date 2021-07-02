@@ -41,7 +41,17 @@ let snippets = [
         "name": "projects",
         "content": <fragment><div id="main-box">
             <h3>Projects</h3>
-        
+        <div className="entry-box">
+            <div className="entry-logo handyListLogo">
+                
+            </div>
+            <div className="entry-text">
+                <strong>Weather Forecast App</strong><br/>
+                    <em>Weather Forecast App utlizing API's and JS </em> <br/>
+                    <button onClick={() => window.open("https://tallen1985.github.io/Projects/weather/")}>Link to App</button>
+            </div>
+        </div>
+        <div className="spacer">
         <div className="entry-box">
             <div className="entry-logo handyListLogo">
                 <img className="" src={handyListLogo} alt="HandyList" height="90px" />
